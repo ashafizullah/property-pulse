@@ -16,13 +16,13 @@ export const authOptions = {
       }
     })
   ],
-  callback: {
+  callbacks: {
     async signIn({ profile }){
       await connectDB();
 
-      const user = await User.findOne({ email: profile.email });
+      const userExists = await User.findOne({ email: profile.email });
 
-      if (!user) {
+      if (!userExists) {
         const username = profile.name.slice(0, 20);
 
         await User.create({
@@ -43,4 +43,3 @@ export const authOptions = {
     }
   }
 }
-
