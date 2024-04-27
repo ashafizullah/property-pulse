@@ -4,42 +4,27 @@ import { useState, useEffect } from 'react';
 const PropertyAddForm = () => {
   const [mounted, setMounted] = useState();
   const [fields, setFields] = useState({
-    "type": "Apartment",
-    "name": "Boston Commons Retreat",
-    "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
+    "type": "",
+    "name": "",
+    "description": "",
     "location": {
-      "street": "120 Fremont Street",
-      "city": "Boston",
-      "state": "MA",
-      "zipcode": "02108"
+      "street": "",
+      "city": "",
+      "state": "",
+      "zipcode": ""
     },
-    "beds": 2,
-    "baths": 1,
-    "square_feet": 1500,
-    "amenities": [
-      "Wifi",
-      "Full kitchen",
-      "Washer & Dryer",
-      "Free Parking",
-      "Hot Tub",
-      "24/7 Security",
-      "Wheelchair Accessible",
-      "Elevator Access",
-      "Dishwasher",
-      "Gym/Fitness Center",
-      "Air Conditioning",
-      "Balcony/Patio",
-      "Smart TV",
-      "Coffee Maker"
-    ],
+    "beds": '',
+    "baths": '',
+    "square_feet": '',
+    "amenities": [],
     "rates": {
-      "weekly": 1100,
-      "monthly": 4200
+      "weekly": '',
+      "monthly": ''
     },
     "seller_info": {
-      "name": "John Doe",
-      "email": "john@gmail.com",
-      "phone": "617-555-5555"
+      "name": "",
+      "email": "",
+      "phone": ""
     },
     "images": [],
   });
